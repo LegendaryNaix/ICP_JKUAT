@@ -1,0 +1,162 @@
+/* App.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4056b4;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    margin-right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header-feature {
+    margin-right: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header-feature:hover {
+    text-decoration: underline;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.content-section {
+    padding: 20px;
+}
+
+.login-form,
+.signup-form {
+    display: none; /* Hide forms by default */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.input-field {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.login-btn,
+.signup-btn,
+.logout-btn {
+    padding: 8px 20px;
+    margin: 10px 0;
+    border: none;
+    background-color: #4056b4;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover,
+.signup-btn:hover,
+.logout-btn:hover {
+    background-color: #344d96;
+}
+
+.dashboard {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.buy-sell-panel {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 30%;
+}
+
+.about,
+.news {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #4056b4;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    margin-top: auto;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Show forms when visible class is applied */
+.login-form.visible,
+.signup-form.visible {
+    display: block;
+}
+
+.login-form,
+.signup-form {
+    display: none; /* Hide forms by default */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Show forms when respective state is true */
+.app .header-right .login-form,
+.app .header-right .signup-form {
+    display: block;
+}
+
+/* Additional styles for the new layout */
+main {
+    display: flex;
+    flex-grow: 1;
+}
+
+.content {
+    flex-grow: 1;
+    margin-right: 20px;
+}
