@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "wazito_backend": {
+      "candid": "src/wazito_backend/wazito_backend.did",
+      "package": "wazito_backend",
+      "type": "rust"
+    },
+    "wazito_frontend": {
+      "dependencies": [
+        "wazito_backend"
+      ],
+      "source": [
+        "src/wazito_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "wazito_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
